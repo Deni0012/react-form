@@ -27,6 +27,11 @@ const listArticle = [
 function App() {
   const [newArticle, setNewArticle] = useState('')
 
+  const listArticleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Selected Album")
+  }
+
   return (
     <>
       <ul>
@@ -34,6 +39,13 @@ function App() {
           <li key={listArticle.id}>{listArticle.title}</li>
         ))}
       </ul>
+
+      <form onSubmit={listArticleSubmit}>
+        <input type="text"
+          value={newArticle}
+          onChange={(e => setNewArticle(e.target.value))} />
+        <button>Invia</button>
+      </form>
 
     </>
   )

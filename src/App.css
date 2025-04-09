@@ -4,3 +4,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-image: url(assets/salmo-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ul li {
+  color: #ffff;
+}
+
+input {
+  font-size: 20px;
+}
+
+button {
+  background-color: lightgreen;
+  border-radius: 10px;
+  font-size: 20px;
+}
