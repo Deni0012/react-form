@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 
-const listSalmo = [
+const listArticle = [
   {
     id: 1,
     title: "Playlist"
@@ -25,10 +25,15 @@ const listSalmo = [
 ]
 
 function App() {
-  const [] = useState(0)
+  const [newArticle, setNewArticle] = useState('')
 
   return (
     <>
+      <ul>
+        {listArticle.map(listArticle => (
+          <li key={listArticle.id}>{listArticle.title}</li>
+        ))}
+      </ul>
 
     </>
   )
