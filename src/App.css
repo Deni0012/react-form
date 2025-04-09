@@ -9,10 +9,13 @@ body {
   background-image: url(assets/salmo-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
 }
 
 ul li {
   color: #ffff;
+  list-style: none;
 }
 
 input {
